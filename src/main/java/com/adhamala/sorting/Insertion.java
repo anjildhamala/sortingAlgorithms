@@ -8,7 +8,7 @@ public class Insertion<T extends Comparable<T>> implements SortingAlgorithm<T> {
     @Override
     public T[] sort(T[] collection, SortOrder order) {
 
-        for (int i = 1; i <= collection.length - 1; i++) {
+        for (int i = 0; i < collection.length; i++) {
             int j = i;
 
             while (j > 0) {
